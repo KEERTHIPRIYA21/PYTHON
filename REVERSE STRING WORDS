@@ -1,0 +1,7 @@
+#REVERSE CHARACTERS OF EACH WORD OF A STRING
+str1="how are you?"
+l=str1.split(" ")
+k=""
+for i in l:
+    k=k+i[-1::-1]+" "
+print(k)
