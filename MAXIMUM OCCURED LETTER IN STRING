@@ -1,0 +1,18 @@
+def max_occur(str):
+    l1=[*str]
+    dt={}
+    maxi=0
+    ms=""
+    for i in l1:
+        if i in dt:
+            dt[i]=dt[i]+1
+        else:
+            dt[i]=1
+            
+        if maxi<dt[i]:
+            ms=i
+            maxi=dt[i]
+            
+    return maxi
+str="hello hola"
+print(max_occur(str))
